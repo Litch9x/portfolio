@@ -110,7 +110,7 @@ export default function AboutContent() {
                     ② 履歴書 (Japanese):
                   </span>{" "}
                   <a
-                    href="/files/cv-ja.pdf"
+                    href="/files/cv-ja.xlsx"
                     download
                     className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800"
                   >
@@ -122,12 +122,12 @@ export default function AboutContent() {
 
             {/* Bên phải: ảnh đại diện */}
             <div
-              className={`w-52 h-52 md:w-60 md:h-60 relative rounded-full overflow-hidden border-4 shadow-lg shrink-0 ${
+              className={`w-40 h-60 md:w-60 md:h-80 relative overflow-hidden border-4 shadow-lg shrink-0 ${
                 theme === "dark" ? "border-zinc-600" : "border-zinc-300"
               }`}
             >
               <Image
-                src="/images/avt.jpg"
+                src="/images/anhthe.jpg"
                 alt="My photo"
                 fill
                 className="object-cover"

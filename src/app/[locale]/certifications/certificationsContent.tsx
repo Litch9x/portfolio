@@ -62,7 +62,26 @@ export default function CertificationsContent() {
                   <li>{t("education.graduation")}</li>
                 </ul>
               </div>
-
+              {/* Languages */}
+              <div>
+                <h2
+                  className={`text-xl font-semibold mb-2 ${
+                    theme === "dark" ? "text-blue-400" : "text-blue-800"
+                  }`}
+                >
+                  {t("langLabel")}
+                </h2>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>
+                    <strong>{t("certifications.ja")}</strong> JLPT N2 相当レベル
+                    <br />
+                    直近の受験結果：83/180（未合格）　（7/2025)
+                  </li>
+                  <li>
+                    <strong>{t("certifications.en")}</strong> B1 APTIS
+                  </li>
+                </ul>
+              </div>
               {/* Certifications */}
               <div>
                 <h2
@@ -73,12 +92,14 @@ export default function CertificationsContent() {
                   {t("cerLabel")}
                 </h2>
                 <ul className="list-disc list-inside space-y-2">
-                  <li>
-                    <strong>{t("certifications.ja")}</strong> JLPT N2
-                  </li>
-                  <li>
-                    <strong>{t("certifications.en")}</strong> TOEIC 550
-                  </li>
+                  <li>{t("achievements-01")}</li>
+                  <li>{t("achievements-02")}</li>
+                  <li>{t("achievements-03")}</li>
+                  <li>{t("achievements-04")}</li>
+                  <li>{t("achievements-05")}</li>
+                  <li>{t("achievements-06")}</li>
+                  <li>{t("achievements-07")}</li>
+                  <li>{t("achievements-08")}</li>
                 </ul>
               </div>
             </div>
